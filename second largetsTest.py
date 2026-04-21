@@ -1,19 +1,21 @@
-from cmath import inf
 import unittest
 
-def secondlargest(arr):
-    count1 = float('-inf')
-    count2 = float('-inf')
-    for ele in arr:
-        if ele > count1:
-            count2 = count1
-            count1 = ele
-        elif ele > count2 and ele != count1:
-            count2 = ele
-    return count2
+from secondLargest import secondlargest
 
-arr = [0,0,0]
-print(secondlargest(arr))
+
+# def secondlargest(arr):
+#     count1 = float('-inf')
+#     count2 = float('-inf')
+#     for ele in arr:
+#         if ele > count1:
+#             count2 = count1
+#             count1 = ele
+#         elif ele > count2 and ele != count1:
+#             count2 = ele
+#     return count2
+#
+# arr = [0,0,0]
+# print(secondlargest(arr))
 
 
 class TestSecondLargest(unittest.TestCase):
@@ -25,6 +27,9 @@ class TestSecondLargest(unittest.TestCase):
         self.assertEqual(secondlargest([-1,-2,-3]), -2)
     def testAll(self):
         self.assertEqual(secondlargest([-10, 1, 2, 3]), 2)
+    def testSingle(self):
+        self.assertEqual(secondlargest([5]), float('-inf'))
+
 
 
 if __name__ == "__main__":
