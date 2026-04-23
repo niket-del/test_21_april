@@ -9,5 +9,5 @@ def secondlargest(arr):
             count2 = ele
     return count2
 
-# arr = [[10,20,30],[40],50]
+# arr = [10,20,12,45,65,34]
 # print(secondlargest(arr))
