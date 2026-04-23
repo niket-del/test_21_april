@@ -1,5 +1,3 @@
-from prime_cli.commands.pods import status
-
 from Basics.primes import primes
 
 def printNPime(n):
