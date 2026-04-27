@@ -10,7 +10,7 @@ def printNPime(n):
     return series
 
 
-n = 20
+n = 10
 print(printNPime(n))
 
 

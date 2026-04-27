@@ -1,11 +1,9 @@
-import unittest
+#import pytest
 
+from Basics.febbonacci import febonacci
 
+def test_feb():
+    assert febonacci(5) == [0, 1, 1, 2, 3]
 
-class FebbonacciTest(unittest.TestCase):
-    def testFeb(self):
-        self.assertEqual(Febonacci(5),[0,1,1,2,3])
-
-
-if __name__ == "__main__":
-    unittest.main()
+def test_feb_negative_Value():
+    assert febonacci(-5) == [0, 1]

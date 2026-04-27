@@ -11,7 +11,7 @@ def febonacci(num):
         a = b
         b = c
     return series
-num = 5
+num =5
 print(febonacci(num))
 
 #question: print the febbonacci series for the given value.
@@ -19,13 +19,15 @@ print(febonacci(num))
 #approach : I take 2 inputs a and b assign value to a,b = 0,1 so now first I insert that two element inside the list then i go through the range
 # update c as a+b and add c inside list after update values of a and b .
 
-def febonacciUsingRec(num):
-    if num == 0:
-        return 0
-    if num == 1:
-        return 1
-    else:
-        return (febonacci(num-1)+febonacci(num-2))
-n = 20
-for i in range(n):
-    print(febonacci(i))
+# def febonacciUsingRec(num):
+#     if num == 0:
+#         return 0
+#     if num == 1:
+#         return 1
+#     else:
+#         return (febonacciUsingRec(num-1)+febonacciUsingRec(num-2))
+# n = 5
+# result = []
+# for i in range(n):
+#     result.append(febonacciUsingRec(i))
+# print(result)
